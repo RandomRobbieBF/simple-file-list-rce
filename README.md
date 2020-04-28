@@ -20,3 +20,7 @@ optional arguments:
 ```
 python3 simple.py --url http://192.168.1.134 -f1 test5.png -f2 test5.php
 ```
+
+
+![alt text](https://raw.githubusercontent.com/RandomRobbieBF/simple-file-list-rce/master/Screenshot%202020-04-28%20at%2011.35.42.png "screenshot")
+
