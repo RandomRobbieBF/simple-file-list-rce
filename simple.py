@@ -28,7 +28,7 @@ proxyDict = {
 
 def check_vuln(URL):
 	headers = {"Origin":""+URL+"","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:75.0) Gecko/20100101 Firefox/75.0","Connection":"close","Accept-Encoding":"gzip, deflate","Accept":"*/*"}
-	response = session.get(""+url+"/wp-content/plugins/simple-file-list/readme.txt", headers=headers,verify=False,timeout=10,proxies=proxyDict)
+	response = session.get(""+URL+"/wp-content/plugins/simple-file-list/readme.txt", headers=headers,verify=False,timeout=10,proxies=proxyDict)
 	if response.status_code == 200:
 		if "Simple File List gives your WordPress website a "  in response.text:
 			if "4.2.3" not in response.text:
